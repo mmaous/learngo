@@ -1,7 +1,10 @@
 package main
 
-import "rsc.io/quote"
-import "fmt" 
+import (
+	"fmt"
+	"time"
+	"rsc.io/quote"
+)
 
 func RandomQuote() {
 	fmt.Println(quote.Opt())
@@ -10,7 +13,12 @@ func RandomQuote() {
 func hello() {
 	fmt.Println("Hello, world.")
 }
+
+func timeCantell() {
+	fmt.Println(time.Now().UTC().Format(time.RFC1123))
+}
 func main() {
 	hello()
 	RandomQuote()
+	timeCantell()
 }
