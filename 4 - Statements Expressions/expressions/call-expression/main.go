@@ -4,7 +4,13 @@ import (
 	"fmt"
 	"runtime"
 )
+// to document your code , use the following format
 
+/*
+main function is an entry point to the program.
+
+It allows Go to find where to start executing an executable program.
+*/
 func main() {
 	// Call expressions are expressions that call functions.
 	// Run code.
